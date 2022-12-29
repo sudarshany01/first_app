@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:six_app/widgets/drawer.dart';
+
+
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,7 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Catelog App"
+          "Catelog App",
 
         ),
       ),
@@ -21,7 +24,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
