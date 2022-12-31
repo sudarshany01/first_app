@@ -30,7 +30,6 @@ void main() {
           MyRoutes.homeRoute:(context)=>HomePage(),
           MyRoutes.loginRoute:(context)=>LoginPage(),
 
-
         },
 
       );

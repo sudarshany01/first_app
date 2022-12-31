@@ -10,7 +10,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final imageUrl=
-    "hey.png";
+    "https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UY436_FMwebp_QL65_.jpg";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -26,6 +26,8 @@ class MyDrawer extends StatelessWidget {
                   accountName: Text("Sudarshan Yadav"),
                   accountEmail: Text("sudarshany9654@gmail.com"),
                   currentAccountPicture: CircleAvatar(
+                    radius: 50,
+
                     backgroundImage: NetworkImage(imageUrl),
                   ),
 
@@ -82,7 +84,21 @@ class MyDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-            )
+            ),
+            ListTile(
+              leading: Icon(
+                CupertinoIcons.option,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Option",
+                textScaleFactor: 1.2,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+
           ],
 
         ),
