@@ -63,10 +63,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
               ),
               TextFormField(
+                obscureText: true,
+
                 decoration: InputDecoration(
 
                   hintText: "EnterUserName",
-                  labelText: "UserName"
+                  labelText: "UserName",
                 ),
                 validator: (value){
                   if (value != null && value.isEmpty){
@@ -106,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
 
                  onTap: ()=>movetoHome(context),
                  child: AnimatedContainer(
-                   duration: Duration(seconds: 1),
+                   duration: const Duration(seconds: 1),
                    width: changeButton? 50:150,
                    height: 50,
 
